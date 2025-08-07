@@ -65,7 +65,7 @@ namespace NaadiyasCSApp
 
                 if (choice == null || choice.Trim().ToLower() != "y")
                 {
-                    Console.WriteLine("Goodbye!");
+                    Console.WriteLine("Thank you!!");
                     break;
                 }
 
