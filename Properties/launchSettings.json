@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NaadiyasC#App": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
