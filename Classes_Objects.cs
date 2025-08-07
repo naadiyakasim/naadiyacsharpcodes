@@ -73,7 +73,7 @@ namespace NaadiyasCSApp
         {
             Student student1 = new Student("Aisha", 20);
             student1.DisplayInfo();
-            student1.Age = 22; // Changing properties using encapsulation
+            student1.Age = 22; // Changing properties using oops - encapsulation
             Console.WriteLine("\nAfter updating values:");
             student1.DisplayInfo();
 
