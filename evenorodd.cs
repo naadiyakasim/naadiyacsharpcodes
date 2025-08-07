@@ -16,7 +16,7 @@ namespace NaadiyasCSApp
                 int number;
                 string? input;
 
-                // Get valid input
+                
                 while (true)
                 {
                     Console.Write("Enter a number: ");
@@ -30,7 +30,7 @@ namespace NaadiyasCSApp
 
                     if (int.TryParse(input, out number))
                     {
-                        break; // valid number entered
+                        break; // to valid number entered
                     }
                     else
                     {
@@ -38,7 +38,6 @@ namespace NaadiyasCSApp
                     }
                 }
 
-                // Check even or odd
                 if (number % 2 == 0)
                 {
                     Console.WriteLine($"{number} is even.");
@@ -48,7 +47,6 @@ namespace NaadiyasCSApp
                     Console.WriteLine($"{number} is odd.");
                 }
 
-                // Ask user if they want to check another number
                 Console.Write("\nDo you want to check another number? (y/n): ");
                 string? choice = Console.ReadLine();
 

@@ -29,7 +29,6 @@ namespace NaadiyasCSApp
             Console.WriteLine($"\nAverage Score: {average:F2}");
         }
 
-        // Method to get a valid score from the user
         static int GetScore(string subject)
         {
             int score;
@@ -40,8 +39,8 @@ namespace NaadiyasCSApp
                 Console.Write($"Enter score in {subject} (0 - 100): ");
                 string input = Console.ReadLine();
 
-                // Try to parse input as integer
-                if (int.TryParse(input, out score))
+                
+                if (int.TryParse(input, out score)) // Try to parse input as integer
                 {
                     if (score >= 0 && score <= 100)
                     {
@@ -62,7 +61,6 @@ namespace NaadiyasCSApp
             return score;
         }
 
-        // Method to calculate average
         static double CalculateAverage(List<int> scoreList)
         {
             int total = 0;

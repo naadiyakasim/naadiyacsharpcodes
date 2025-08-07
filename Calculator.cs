@@ -12,7 +12,6 @@ namespace NaadiyasCSApp
         {
             bool keepRunning = true;
 
-            // Available operators list for foreach demo
             List<string> operators = new List<string> { "+", "-", "*", "/" };
 
             while (keepRunning)
@@ -21,7 +20,6 @@ namespace NaadiyasCSApp
 
                 Console.WriteLine("=== Simple Calculator ===");
 
-                // Display available operators using foreach
                 Console.Write("Available operators: ");
                 foreach (var op in operators)
                 {
@@ -29,7 +27,6 @@ namespace NaadiyasCSApp
                 }
                 Console.WriteLine("\n");
 
-                // 1. Get the first number
                 double num1;
                 while (true)
                 {
@@ -52,7 +49,7 @@ namespace NaadiyasCSApp
                     }
                 }
 
-                // 2. Get the operator
+                // Getting the operator
                 string? inputOp;
                 while (true)
                 {
@@ -65,7 +62,7 @@ namespace NaadiyasCSApp
                         continue;
                     }
 
-                    // Use switch to validate operator
+                    // have sued swtch to validate the operator
                     switch (inputOp)
                     {
                         case "+":
@@ -81,7 +78,6 @@ namespace NaadiyasCSApp
 
             OperatorValid:
 
-                // 3. Get the second number
                 double num2;
                 while (true)
                 {
@@ -104,11 +100,9 @@ namespace NaadiyasCSApp
                     }
                 }
 
-                // 4. Perform calculation
                 double result = 0;
                 bool valid = true;
 
-                // Use switch for calculation instead of if/else
                 switch (inputOp)
                 {
                     case "+":
@@ -138,7 +132,6 @@ namespace NaadiyasCSApp
                     Console.WriteLine($"Result: {result}");
                 }
 
-                // 5. Ask if user wants to continue
                 Console.Write("\nDo you want to perform another calculation? (y/n): ");
                 string? choice = Console.ReadLine();
 
