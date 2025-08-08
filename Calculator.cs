@@ -18,7 +18,7 @@ namespace NaadiyasCSApp
             {
                 Console.Clear();
 
-                Console.WriteLine("=== Simple Calculator ===");
+                Console.WriteLine("Calculator");
 
                 Console.Write("Available operators: ");
                 foreach (var op in operators)
